@@ -1,10 +1,5 @@
 document.getElementById("id_bussiness_version").innerHTML="Bussiness version: 2018.10.15.2.1";
 //-----------------------------------------------------------------------------------------
-function rezolva(){
-	var coeficienti=citire();
-	var solutii=rezolvare(coeficienti);
-	afiseare(solutii);
-}//-----------------------------------------------------------------------------------------
 function citire(){
 	var _a=document.getElementById("id_a").value;
 	var _b=document.getElementById("id_b").value;
@@ -38,3 +33,8 @@ function afiseaza(){
 	document.getElementById("id_x2").innerHTML=solutii.x2.re+" + "+solutii.x2.im+"i";
 }
 //-----------------------------------------------------------------------------------------
+function rezolva(){
+	var coeficienti=citire();
+	var solutii=rezolvare(coeficienti);
+	afiseare(solutii);
+}//-----------------------------------------------------------------------------------------
