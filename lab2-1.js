@@ -1,4 +1,4 @@
-document.getElementById("id_bussiness_version").innerHTML="Bussiness version: 2018.10.15.2";
+document.getElementById("id_bussiness_version").innerHTML="Bussiness version: 2018.10.15.2.1";
 //-----------------------------------------------------------------------------------------
 function citire(){
 	var _a=document.getElementById("id_a").value;
