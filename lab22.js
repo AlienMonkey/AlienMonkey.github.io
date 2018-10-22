@@ -1,4 +1,5 @@
-document.getElementById("id_bussiness_version").innerHTML="Bussiness version: 2018.10.15.3";
+document.getElementById("id_bussiness_version").innerHTML="Bussiness version: 2018.10.22.0";
+document.getElementById("id_button").addEventListener("click",rezolva);
 //-----------------------------------------------------------------------------------------
 function t_ec2(){
 	this.citire=function(){
