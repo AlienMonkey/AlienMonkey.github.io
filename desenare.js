@@ -23,6 +23,8 @@ function start(){
 		my_worker.onmessage=function(e){
 			document.getElementById("ïd_prime").innerHTML=e.data;
 		}
+	else
+		my_worker.postMessage("start");
 	}
 	id_timer = setInterval(deseneaza_cerc, 10, unghi_start, context, canvas.width, canvas.height);
 }
@@ -30,6 +32,6 @@ function start(){
 function stop(){
 	document.getElementById("id_start_button").disabled=false;
 	document.getElementById("id_stop_button").disabled=true;
-	my_worker.postMessage(stop);
+	my_worker.postMessage("stop");
 	clearInterval(id_timer);
 }
