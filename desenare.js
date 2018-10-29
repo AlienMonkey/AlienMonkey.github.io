@@ -1,4 +1,4 @@
-document.getElementById("id_bussiness_version").innerHTML="Bussiness version: 2018.10.22.1";
+document.getElementById("id_bussiness_version").innerHTML="Bussiness version: 2018.10.29.0";
 document.getElementById("id_start_button").addEventListener("click",start);
 document.getElementById("id_stop_button").addEventListener("click",stop);
 document.getElementById("id_start_button").disabled=false;
@@ -15,9 +15,12 @@ var unghi_start = {unghi:0}; // in grade
 function start(){
 	var canvas = document.getElementById("id_canvas");
 	var context = canvas.getContext("2d");
-	
 	document.getElementById("id_start_button").disabled=true;
 	document.getElementById("id_stop_button").disabled=false;
+	var my_worker=new Worker("calcul_prime.js");
+	my_worker.onmessage=function(e){
+		document.getElementById("ïd_prime").innerHTML=e.data;
+	}
 	id_timer = setInterval(deseneaza_cerc, 10, unghi_start, context, canvas.width, canvas.height);
 }
 
