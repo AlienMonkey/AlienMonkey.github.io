@@ -1,4 +1,4 @@
-document.getElementById("id_bussiness_version").innerHTML="Bussiness version: 2018.10.29.2";
+document.getElementById("id_bussiness_version").innerHTML="Bussiness version: 2018.10.29.3";
 window.addEventListener("deviceorientation", on_device_orientation);
 
 function on_device_orientation(e){
@@ -8,7 +8,7 @@ function on_device_orientation(e){
 	
 	var canvas=document.getElementById("id_canvas");
 	var context=canvas.getContext("2d");
-	context.clearRect(0, 0, canvas.width/2, canvas.height/2);
+	context.clearRect(0, 0, canvas.width, canvas.height);
 	var R=10;
 	context.beginPath();
 	context.arc(canvas.width/2+e.gamma/90*(canvas.width/2-R),
