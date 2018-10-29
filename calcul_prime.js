@@ -19,9 +19,9 @@ function calculeaza_prime(start_value){
 				if (is_prim(i))
 					postMessage(i);
 			}
-			start += 1000;
+			start_value += 1000;
 		}
-		if (start<1e10)
+		if (start_value<1e10)
 			setTimeout(calculeaza_prime, 1, start_value);
 		else
 			postMessage("gata");
