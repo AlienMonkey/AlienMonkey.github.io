@@ -7,7 +7,7 @@ function is_prim(n)
 	return true;	
 }
 //-------------------------------------------
-for (var i = 1e9; i < 1e9+10000; i++)
+for (var i = 1; i < 10000; i++)
 	if (is_prim(i))
 		postMessage(i);
 	
