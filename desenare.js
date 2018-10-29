@@ -1,4 +1,4 @@
-document.getElementById("id_bussiness_version").innerHTML="Bussiness version: 2018.10.29.0";
+document.getElementById("id_bussiness_version").innerHTML="Bussiness version: 2018.10.29.2";
 document.getElementById("id_start_button").addEventListener("click",start);
 document.getElementById("id_stop_button").addEventListener("click",stop);
 document.getElementById("id_start_button").disabled=false;
@@ -17,7 +17,7 @@ function start(){
 	var context = canvas.getContext("2d");
 	document.getElementById("id_start_button").disabled=true;
 	document.getElementById("id_stop_button").disabled=false;
-	var my_worker=new Worker("calcul_prime.js");
+	my_worker=new Worker("calcul_prime.js");
 	my_worker.onmessage=function(e){
 		document.getElementById("ïd_prime").innerHTML=e.data;
 	}
@@ -27,5 +27,6 @@ function start(){
 function stop(){
 	document.getElementById("id_start_button").disabled=false;
 	document.getElementById("id_stop_button").disabled=true;
+	my_worker.postMessage(stop);
 	clearInterval(id_timer);
 }

@@ -1,3 +1,7 @@
+var stopped=false;
+onmessage()=function(e){
+	if(e.data=="stop") stopped=true;
+}
 //-------------------------------------------
 function is_prim(n)
 {
@@ -7,9 +11,20 @@ function is_prim(n)
 	return true;	
 }
 //-------------------------------------------
-for (var i = 1; i < 1e8; i++)
-	if (is_prim(i))
-		postMessage(i);
-	
-postMessage("gata");
+function calculeaza_prime(start_value){
+	if(stopped);
+		else{
+			for (var i = start; i < start+1000; i++){
+				if (is_prim(i))
+					postMessage(i);
+			}
+			start += 1000;
+		}
+		if (start<1e10)
+			setTimeout(calculeaza_prime, 1, start_value);
+		else
+			postMessage("gata");
+		
+}
 //-------------------------------------------
+calculeaza_prime(1e9);
