@@ -10,7 +10,7 @@ function on_failure(e){
 }
 //--------------------------------------------------------------------------------------------
 function start(){
-	var c={audio: true, vidio: true}
+	var c={audio: true, video: true};
 	navigator.mediaDevices.getUserMedia().then(on_success).catch(on_failure);
 }
 //--------------------------------------------------------------------------------------------
