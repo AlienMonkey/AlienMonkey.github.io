@@ -7,8 +7,7 @@ function on_touch_start(e){
 	for(var i = 0; i < e.changeTouches.length; i++){
 		var context = canvas.getContext("2d");
 		context.beginPath();
-		context.arc(e.changeTouches[i].pageX, e.changeTouches[i].pageY, 10, 0, 2 * Math.PI);
+		context.arc(e.changedTouches[i].pageX, e.changedTouches[i].pageY, 10, 0, 2 * Math.PI);
 		context.stroke();
 	}
-	
 }
