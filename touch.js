@@ -1,4 +1,4 @@
-document.getElementById("id_bussiness_version").innerHTML="Bussiness version: 2018.11.26.8";
+document.getElementById("id_bussiness_version").innerHTML="Bussiness version: 2018.11.26.9";
 
 var canvas = document.getElementById("id_canvas");
 canvas.addEventListener("touchstart", on_touch_start);
@@ -20,8 +20,7 @@ function on_touch_start(e){
 		context.arc(e.changedTouches[i].pageX - canvas_boundig_rect.left,
 					e.changedTouches[i].pageY - canvas_boundig_rect.top, 10, 0, 2 * Math.PI);
 		context.stroke();
-		last_pos.x = e.changedTouches[i].pageX
-		last_pos.y = e.changedTouches[i].pageY
+
 	}
 }
 
