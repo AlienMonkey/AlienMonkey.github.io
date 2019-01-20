@@ -6,7 +6,7 @@ function on_device_orientation(e){
 	document.getElementById("id_alpha").innerHTML=e.alpha;
 	document.getElementById("id_beta").innerHTML=e.beta;
 	document.getElementById("id_gamma").innerHTML=e.gamma;
-	
+
 	var canvas=document.getElementById("id_canvas");
 	var context=canvas.getContext("2d");
 	context.clearRect(0, 0, canvas.width, canvas.height);
@@ -24,7 +24,7 @@ function on_device_motion(e){
 	document.getElementById("id_acc_z").innerHTML=Math.round(acc_z*100)/100;
 	document.getElementById("id_acc_x").innerHTML=Math.round(acc_x*100)/100;
 	document.getElementById("id_acc_y").innerHTML=Math.round(acc_y*100)/100;
-	
+
 	document.getElementById("id_rot_x").innerHTML=-Math.atan(acc_x/acc_z)*180/Math.PI;
 	document.getElementById("id_rot_y").innerHTML=Math.atan(acc_y/acc_z)*180/Math.PI;
 }

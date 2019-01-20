@@ -11,6 +11,7 @@ function deseneaza_cerc(unghi,context, w, h){
 	context.stroke();
 	unghi.unghi++;
 }
+
 var unghi_start = {unghi:0}; // in grade
 my_worker=null;
 function start(){
