@@ -10,3 +10,11 @@
   ### Products
   ![alt text](https://github.com/AlienMonkey/AlienMonkey.github.io/blob/master/OnlineMarket/Screenshot_20190121-003724.jpg "Products")
   Aceasta este pagina cu produsele prezente in magazin din care utilizatorul poate adauga in cos de ce are nevoie.
+  
+  ### Cart
+  ![alt text](https://github.com/AlienMonkey/AlienMonkey.github.io/blob/master/OnlineMarket/Screenshot_20190121-003733.jpg "Cart")
+  Aici avem cosul de cumparaturi cu produsele noastre si suma pe care trebuie sa o platim pentru a ridica produsele de la magazin.
+  
+  ### Add/Remove Product
+  ![alt text](https://github.com/AlienMonkey/AlienMonkey.github.io/blob/master/OnlineMarket/Screenshot_20190121-003739.jpg "Add/Remove Product")
+  Aceasta este o pagina dedicata administratorului de marva a magazinului unde poate adauga sau elimina un produs din stocul magazinului.
